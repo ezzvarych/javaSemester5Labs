@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Add new movie</title>
+</head>
+<f:view>
+    <h2>Form to create new book:</h2>
+    <form method="post" action="/app/post-new-movie">
+        Title <input name="title" required="required" /><b />
+        Director <input name="director" required="required" /><b></b>
+        Film length <input name="length" /><b></b>
+        Year <input name="year" /><b></b>
+        Short description<textarea rows="" cols="" name="short-descr"></textarea>
+        <input type="submit" name="Add" />
+    </form>
+</f:view>
+</html>

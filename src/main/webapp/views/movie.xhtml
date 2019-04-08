@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Movie</title>
+</head>
+<f:view>
+    <h2>Movie:</h2>
+    <p>Id: <h:outputText value="#{movie.id}" /></p>
+    <p>Title: <h:outputText value="#{movie.title}" /></p>
+    <p>Director: <h:outputText value="#{movie.director.name}" /></p>
+    <p>Length: <h:outputText value="#{movie.length}" /></p>
+    <p>Year: <h:outputText value="#{movie.year}" /></p>
+    <p>Short description: <h:outputText value="#{movie.shortDescr}" /></p>
+</f:view>
+</html>
